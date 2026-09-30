@@ -1,10 +1,10 @@
 {% set name = "perl-memoize" %}
-{% set version = "1.13" %}
-{% set sha256 = "91a64f9710e7161845a7821da6d3084c6e0bc1381a4bafc5b7a12956b7265fa4" %}
+{% set version = "1.17" %}
+{% set sha256 = "2beef0afb2438e542c599b54b17a2830e337f53d69fce19f2884955743846696" %}
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://cpan.metacpan.org/authors/id/A/AR/ARISTOTLE/Memoize-{{ version }}.tar.gz
@@ -39,9 +39,7 @@ about:
   license: GPL-1.0-or-later OR Artistic-1.0-Perl
   license_family: OTHER
   summary: Make functions faster by trading space for time
-  license_file:
-    - {{ environ["PREFIX"] }}/man/man1/perlartistic.1
-    - {{ environ["PREFIX"] }}/man/man1/perlgpl.1
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
